@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
         <div className="mx-auto w-full max-w-7xl">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-                <div className="relative z-10 max-w-screen-xl px-2  pb-10 pt-10 sm:py-10 mx-auto sm:px-5 lg:px-5">
-                    <div className="max-w-xl sm:mt-1 mt-70 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl">
+            <aside className="relative overflow text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+                <div className="relative z-10 max-w-screen-xl px-1 pb-10 pt-10 sm:py-5 mx-auto sm:px-5 lg:px-5">
+                    <div className="max-w-xl sm:mt-5 mt-10 sm:space-y-8 text-center sm:text-right sm:ml-auto">
+                        <h2 className="text-2xl sm:text-4xl font-bold">
                             Welcome
-                            <span className="hidden sm:block text-4xl">To the Blog</span>
+                            <span className="block sm:hidden text-2xl">To the Blog</span>
                         </h2>
 
                         <Link
@@ -31,20 +31,16 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://velocityglobal.com/sites/default/files/migrate_images/header-remote-work-stats.f22353d9.svg" alt="image1" />
+                <div className="relative inset-0 w-full sm:my-10 sm:pt-1 pt-12 h-full ">
+                    <img className="w-full sm:w-96 h-auto" src="https://velocityglobal.com/sites/default/files/migrate_images/header-remote-work-stats.f22353d9.svg" alt="image1" />
                 </div>
             </aside>
 
-            <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://media.licdn.com/dms/image/C5612AQEnMQYBMflt6g/article-cover_image-shrink_600_2000/0/1617020286618?e=2147483647&v=beta&t=ORHg1qlbhbSZQ5iSKJmDXYWB8PwtNZzW21kQIHjc_aY" alt="image2" />
+            <div className="grid place-items-center sm:mt-10">
+                <img className="w-full sm:w-96 h-auto" src="https://media.licdn.com/dms/image/C5612AQEnMQYBMflt6g/article-cover_image-shrink_600_2000/0/1617020286618?e=2147483647&v=beta&t=ORHg1qlbhbSZQ5iSKJmDXYWB8PwtNZzW21kQIHjc_aY" alt="image2" />
             </div>
 
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium"> Hello There</h1>
-
-            
+            <h1 className="text-center text-lg sm:text-5xl py-5 font-medium">Hello There</h1>
         </div>
-        
-
     );
 }
